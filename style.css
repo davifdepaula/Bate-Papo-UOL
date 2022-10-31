@@ -19,6 +19,9 @@ header {
     justify-content: space-between;
     padding: 16px 22px;
     margin-bottom: 11px;
+    position: fixed;
+    top:0;
+    width: 100%;
 }
 
 header ion-icon {
@@ -34,14 +37,27 @@ header img {
 
 /* main body */
 
-.inOut {
-    background-color: #d3d3d3;
+main {
+    margin-top: 50px;
+}
+
+.share {
     margin-left: 5px;
+    margin-bottom: 15px;
     padding: 10px;
 }
 
-.privately {
+.inOut {
+    background-color: #d3d3d3;
+}
+
+.private {
     background-color: #ffcbdb;
+}
+
+.public{
+    background-color: #FFFFFF;
+    
 }
 
 .time {
@@ -59,18 +75,16 @@ header img {
 
 
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
 .divFooter {
+    position: fixed;
+    bottom: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #FFFFFF;
     padding: 25px 17px;
+    width: 100%;
+    height: 10px;
 }
 
 .divFooter input {
