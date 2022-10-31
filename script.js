@@ -1,4 +1,5 @@
-let user = prompt("Digite seu lindo nome: "), msgList = []
+let user = prompt("Digite seu lindo nome: ")
+let  msgList = []
 
 function comeIn() {
     const url = "https://mock-api.driven.com.br/api/v6/uol/participants"
@@ -20,7 +21,6 @@ function active(){
         .catch((error) => console.log("não to mais", error))
 }
 setInterval(active, 5000)
-
 
 function getMsg(){
     console.log("atualizei")
@@ -92,7 +92,7 @@ function sendMsg(){
     const msgContent = creatMsg()
     const url = "https://mock-api.driven.com.br/api/v6/uol/messages"
     axios.post(url, msgContent)
-    .then((response) => {
+        .then((response) => {
             getMsg()
             updateChat()
     })
