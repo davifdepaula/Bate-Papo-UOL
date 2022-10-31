@@ -47,15 +47,15 @@ main {
     padding: 10px;
 }
 
-.inOut {
+.status {
     background-color: #d3d3d3;
 }
 
-.private {
+.private_message {
     background-color: #ffcbdb;
 }
 
-.public{
+.message{
     background-color: #FFFFFF;
     
 }
