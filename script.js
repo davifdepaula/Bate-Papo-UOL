@@ -87,6 +87,12 @@ function creatMsg() {
     }
 }
 
+document.addEventListener("keypress", (press) => {
+    if(press.key == "Enter"){
+        sendMsg()
+    }
+})
+
 
 function sendMsg(){
     const msgContent = creatMsg()
