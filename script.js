@@ -41,14 +41,14 @@ setInterval(getMsg, 3000)
 function renderMsg(msg) {
     const content =  document.querySelector("main")
     if (msg.type === "status"){
-        content.innerHTML += `<div class= "status share">
+        content.innerHTML += `<div class= "status share" data-test="message">
         <span class="time">(${msg.time})</span>$ 
         <span class="userName">${msg.from}</span> ${msg.text}
         </div>
         `
     }
     else if(msg.type === "message"){
-        content.innerHTML += `<div class= "message share">
+        content.innerHTML += `<div class= "message share" data-test="message">
         <span class="time">(${msg.time})</span>$ 
         <span class="userName">${msg.from}</span> para 
         <span class="userName">${msg.to}</span>
@@ -58,7 +58,7 @@ function renderMsg(msg) {
     }
 
     else if(msg.type === "private_message"){
-        content.innerHTML += `<div class= "private_message share">
+        content.innerHTML += `<div class= "private_message share" data-test="message">
         <span class="time">(${msg.time})</span>$ 
         <span class="userName">${msg.from}</span> para 
         <span class="userName">${msg.to}</span>

@@ -20,7 +20,7 @@
             <img src="./imagens/logo.png" alt="logo" />
         </div>
         
-        <ion-icon name="people"></ion-icon>
+        <ion-icon name="people" data-test="open-participants"></ion-icon>
     </header>
 
     <main>
@@ -31,8 +31,8 @@
 
     <footer>
         <div class="divFooter">
-            <input class="msgContent" type="text" placeholder="Escreva aqui..."><br><br>
-            <button onclick="sendMsg()">
+            <input class="msgContent" type="text" placeholder="Escreva aqui..." data-test="input-message"><br><br>
+            <button onclick="sendMsg()" data-test="send-message">
                 <ion-icon name="paper-plane-outline"></ion-icon>
             </button>
         </div>
